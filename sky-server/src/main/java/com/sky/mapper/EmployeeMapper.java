@@ -33,4 +33,10 @@ public interface EmployeeMapper {
      */
     //动态sql不使用注解方式
     Page<Employee> pageQuery(EmployeePageQueryDTO pageQueryDTO);
+
+    /**
+     * 更新员工信息
+     * @param employee
+     */
+    void update(Employee employee);
 }
